@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.landing-page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Rubik', sans-serif;
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#title {
+    color: white;
+    font-size: 140px;
+    margin-bottom: 30px;
+}
+#publishers {
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+#learn-more {
+    font-size: 30px;
+}
+
+
+@media (max-width: 750px) {
+    #title {
+        font-size: 72px;
+    }
+}
