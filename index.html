@@ -4,17 +4,189 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Dosis|Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function(){
+        //changes color of header items when hovering
+        $('.header-items').hover(function(){
+            $(this).css("color","green");
+        },
+        function(){
+            $(this).css("color","black");
+        });
+
+        //changes opacity of header when hovering
+        $('header').hover(function(){
+            $(this).css("opacity","1");
+        },
+        function(){
+            $(this).css("opacity","0.7");
+        });
+        
+        //changes opacity of interphase box
+        $('.interphase-box').hover(function(){
+            $(this).css('background-color','rgb(43, 184, 255, 1)');
+        },
+        function(){
+            $(this).css('background-color','rgb(132, 229, 94, 0.7)');
+        }
+        );
+
+        //changes opacity of interphase box
+        $('.prophase-box').hover(function(){
+            $(this).css('background-color','rgb(43, 184, 255, 1)');
+        },
+        function(){
+            $(this).css('background-color','rgb(132, 229, 94, 0.7)');
+        }
+        );
+
+        //changes opacity of interphase box
+        $('.metaphase-box').hover(function(){
+            $(this).css('background-color','rgb(43, 184, 255, 1)');
+        },
+        function(){
+            $(this).css('background-color','rgb(132, 229, 94, 0.7)');
+        }
+        );
+        //changes opacity of anaphase box
+        $('.anaphase-box').hover(function(){
+            $(this).css('background-color','rgb(43, 184, 255, 1)');
+        },
+        function(){
+            $(this).css('background-color','rgb(132, 229, 94, 0.7)');
+        }
+        );
+        //changes opacity of telophase box
+        $('.telophase-box').hover(function(){
+            $(this).css('background-color','rgb(43, 184, 255, 1)');
+        },
+        function(){
+            $(this).css('background-color','rgb(132, 229, 94, 0.7)');
+        }
+        );
+
+    });
+    </script>
     <title>Cell Cycle by Dorwin Liang</title>
 </head>
 <body>
+    <header>
+        <h1 class="title">Learning The <span id="title-main">Cell Cycle</span></h1>
+        <a href="#interphase-section" class="header-items"><h1>Interphase</h1></a>
+        <a href="#prophase-section" class="header-items"><h1>Prophase</h1></a>
+        <a href="#metaphase-section" class="header-items"><h1>Metaphase</h1></a>
+        <a href="#" class="header-items"><h1>Anaphase</h1></a>
+        <a href="#" class="header-items"><h1>Telophase</h1></a>
+    </header>
+
     <div class="landing-page">
-        <h1 id="title">Cell Cycle</h1>
-        <h2 id="publishers">Made by Dorwin Liang</h2>
+        <a href="#interphase-section">
+            <div class="interphase-box phase">
+                <h2 class="box-title">Interphase</h2>
+                <img class="cellcycle-box-items" id="interphase-image" src="images/interphase.png">
+            </div>
+        </a>
+        <a href="#prophase-section">
+            <div class="prophase-box phase">
+                <h2>Prophase</h2>
+                <img class="cellcycle-box-items" src="images/prophase.png">
+            </div>
+        </a>
+        <a href="#metaphase-section">
+            <div class="metaphase-box phase">
+                <h2>Metaphase</h2>
+                <img class="cellcycle-box-items" src="images/Metaphase.png">
+            </div>
+        </a>
+        <a href="#">
+            <div class="anaphase-box phase">
+                <h2>Anaphase</h2>
+                <img class="cellcycle-box-items" src="images/anaphase.png">
+            </div>
+        </a>
+        <a href="#">
+            <div class="telophase-box phase">
+                <h2>Telophase</h2>
+                <img class="cellcycle-box-items" id="telophase-image" src="images/telophase.png">
+            </div>
+        </a>
     </div>
-    <div class="diagram-section">
-        <img src="images/template.png">
-    </div>   
+    <div id="interphase-section">
+        <div class="interphase-intro-box">
+            <h1 class="section-title">🌼 Interphase 🌼</h1>
+            <p class="information" >Interphase, also known as replication, is the first phase of the cell cycle. <br>About 80% of a cell's lifespan is spent in this stage to replicate organelles for duplication. <br>Because this phase is so long, it is separated into 3 stages known as <strong>G1 Phase</strong> , <strong>S Phase</strong>, and <strong>G2 Phase</strong>. </p>
+        </div>
+        <div class="interphase-stages-box">
+            <div class="g1-phase phase-box">
+                <h1 class="header-title">G1 Phase</h1>
+                <p class="information">This is the first stage of Interphase. The cell makes a variety of proteins that are needed for DNA replication. The cell will only enter the next stage if there are sufficient growth factor signals telling the cell to progress. 
+                </p>
+                <img class="interphase-images" src=images/g1.png>
+                <figcaption>📷 A cell in the G1 phase.</figcaption>
+            </div>
+            <div class="s-phase phase-box">
+                <h1 class="header-title">S Phase</h1>
+                <p class="information">Also known as snythesis, this is the second stage of Interphase. DNA in the cell is packaged into chromosomes which is then replicated. As a result of replication, each chromosome now has two sister chromatids!</p>
+                <img class="interphase-images" src="images/s-phase.png">
+                <figcaption>📷 A cell in the S phase with a pair of sister chromatids after replication.</figcaption>
+            </div>
+            <div class="g2-phase phase-box">
+                <h1 class="header-title">G2 Phase</h1>
+                <p class="information">This is the last stage of Interphase. The cell checks to make sure that DNA replication has been successfuly completed and if not, it will make any repairs needed. This cell also performs enzyme and protein synthesis as well as produce large amounts of ATP. This phase is the cell's final chance for the cell to grow before it splits!</p>
+                <img class="interphase-images" src="images/g2.png">
+                <figcaption>📷 A cell in the g2 phase with strands of DNA inside a nucleus getting ready for Prophase.</figcaption>
+            </div>
+        </div>
+    </div>
+    <div id="prophase-section">
+        <h1 class="section-title">🌻 Prophase 🌻</h1>
+        <div class="prophase-info-box">
+            <div class="prophase-section-item">
+                <h2 class="header-title">What happens in Prophase?</h2>
+                <p class="information">Prophase is considered the first true stage of the cell cycle process because of the major changes that occur in the cell. First, the cell beigns breaking down and creating structures. Chromosomes are condensed, which in turn makes it visible with microscopes. The nuclear envelope breaks down and the nucleolus will disappear from the cell. </p>
+            </div>
+            <div class="prophase-section-item">
+                <h2 class="header-title">Why is Prophase important?</h2>
+                <p class="information">A structure known as the <strong>mitotic spindle</strong> forms on the edges of the dividing cell. This structure is necessary to equally divide the chromosomes into two daughter cells during mitosis. </p>
+            </div>
+            <div class="prophase-section-item" id="prophase-pic-box">
+                <img id="prophase-img" src="images/prophase-pic.png">
+                <figcaption>📷 This shows the mitotic spindle forming in order to elongate the cell for division.</figcaption>
+            </div>
+        </div>
+    </div>
+    <div id="metaphase-section">
+        <h1 class="section-title">🌹 Metaphase 🌹</h1>
+        <div class="metaphase-info-box">
+            <div class="metaphase-items">
+                <h2 class="header-title">What happens in Metaphase?</h2> 
+                <p class="information">In the very beginning of this stage, the pairs of condensed chromosomes line up along the equator of the cell. The nuclear membrane in the cell will also disappear completely, making it nucleus-free. After the removal of the membrane, chromosomes move to the <strong>"Metaphase Plate"</strong> which is basically chromosomes aligning at a right angle to the spindle poles.</p>
+                <img id="metaphase-img" src="images/metaphase-pic.png">
+                <figcaption>📷 This shows the elongated cell with chromosomes lined up in the middle getting ready for Anaphase.</figcaption>
+            </div>
+            <div class="metaphase-items">
+                <h2 class="header-title">Spindle Checkpoint</h2>
+                <p class="information">During cell division, the Spindle Checkpoint will make sure that...  </p>
+                <br>
+                <br>
+                <br>
+                <ul class="information">
+                    <li>✔️ All of the chromosomes are at the metaphase plate and everything is properly attached to microtubules.</li>
+                    <br>
+                    <br>
+                    <br>
+                    <li>✔️ The pairs of chromosomes are split evenly between the two daughter cells for the next phase (Anaphase).</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
 
 </body>
 </html>
