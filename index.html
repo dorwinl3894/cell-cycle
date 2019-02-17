@@ -77,12 +77,13 @@
 </head>
 <body>
     <header>
-        <h1 class="title">Learning The <span id="title-main">Cell Cycle</span></h1>
+        <h1 class="title">Learning The <span id="title-main">Mitosis Cell Cycle</span></h1>
         <a href="#interphase-section" class="header-items"><h1>Interphase</h1></a>
         <a href="#prophase-section" class="header-items"><h1>Prophase</h1></a>
         <a href="#metaphase-section" class="header-items"><h1>Metaphase</h1></a>
-        <a href="#" class="header-items"><h1>Anaphase</h1></a>
-        <a href="#" class="header-items"><h1>Telophase</h1></a>
+        <a href="#anaphase-section" class="header-items"><h1>Anaphase</h1></a>
+        <a href="#telophase-section" class="header-items"><h1>Telophase</h1></a>
+        <a href="#regulation-section" class="header-items"><h1>Cell Regulation</h1></a>
     </header>
 
     <div class="landing-page">
@@ -104,13 +105,13 @@
                 <img class="cellcycle-box-items" src="images/Metaphase.png">
             </div>
         </a>
-        <a href="#">
+        <a href="#anaphase-section">
             <div class="anaphase-box phase">
                 <h2>Anaphase</h2>
                 <img class="cellcycle-box-items" src="images/anaphase.png">
             </div>
         </a>
-        <a href="#">
+        <a href="#telophase-section">
             <div class="telophase-box phase">
                 <h2>Telophase</h2>
                 <img class="cellcycle-box-items" id="telophase-image" src="images/telophase.png">
@@ -182,10 +183,148 @@
                     <br>
                     <br>
                     <li>✔️ The pairs of chromosomes are split evenly between the two daughter cells for the next phase (Anaphase).</li>
+                    <br>
+                    <br>
+                    <br>
+                    <li>⚠️ Warning: If the chromosomes are not correctly aligned, the cell will stop division until it fixes itself.</li>
                 </ul>
             </div>
         </div>
-        
+    </div>
+    <div id="anaphase-section">
+        <h1 class="section-title">🌺 Anaphase 🌺</h1>
+        <div class="anaphase-info-box">
+            <div class="anaphase-item">
+                <h1 class="header-title">General Information</h1>
+                <p class="information">Anaphase is the fourth stage of mitosis, as well as the shortest stage. In this process, duplicated genetic materials, DNA packaged into chromosomes, are separated into opposite poles of the cell.</p>
+                <img class="anaphase-img" src="images/anaphase-pic-2.png">\
+                <figcaption>📷 this shows the sister chromatids being separated into single chromosomes while the cell is elongating</figcaption>
+            </div>
+            <div class="anaphase-item">
+                <h1 class="header-title">Disjunction</h1>
+                <p class="information">Disjunction in Anaphase is the process of spindle fibers shortening and sister chromatids being pulled apart at the centromere. As spindle fibers continue to move to opposite ends of the cell, chromosomes develop a distinguished V shape.</p>
+                <img class="anaphase-img-2" src="images/anaphase-pic.png">
+                <figcaption>📷 The picture to the left shows how a daughter chromosome forms a V shape and the spindle fibers continue to shorten as it gets ready to divide. The picture to the right shows how it looks under a microscope.</figcaption>
+            </div>
+        </div>
+    </div>
+    <div id="telophase-section">
+        <h1 class="section-title">🏵️ Telophase 🏵️</h1>
+        <div class="telophase-info-box">
+            <div class="telophase-item">
+                <h1 class="header-title">Telophase</h1>
+                <p class="information">This is the final stage of the cell cycle. This process separates the duplicated genetic material into their own nucleus, creating two nuclei in one cell. Afterwards, the kinetochore microtubules that pulled the duplicated material into opposite ends of the cell begin to dissolve, but the cell continues to elongate.</p>
+                <img class="telophase-img" src="images/telophase-pic-1.png">
+                <figcaption>📷 A nuclear membrane forms around each set of chromosomes to separate DNA from cytoplasm.</figcaption>
+            </div>
+            <div class="telophase-item">
+                <h1 class="header-title">Cytokinesis</h1>
+                <p class="information">Cytokinesis is the second part of Telophase, which is responsible for being the process in which the cell will divide into two. Chromosomes begin to uncoil, which makes them diffuse and less compact. To seperate into two cells, it pinches itself in the middle until it fully cuts off. After that, the cell cycle will repeat the whole process again!</p>
+                <img class="telophase-img" src="images/telophase-pic-2.png">
+                <figcaption>📷 This shows loosened chromosomes in a formed nuclear envelope getting ready to separate into two daughter cells.</figcaption>
+            </div>
+        </div>
+    </div>
+    <div id="regulation-section">
+        <h1 class="section-title">⛔ Cell Regulation ⛔</h1>
+        <p class="information">Cell regulation happens throughout the cell cycle, but one important times that cell regulation really needs to be working is in the Interphase stage, G1 phase.</p>
+        <div class="regulation-section-box">
+            <div class="regulation-item">
+                <h1 class="header-title">G1 Phase</h1>
+                <p class="information">The cell will move to S phase only if there is enough growth factor signals telling the cell to progress.
+                If cells do not get enough necessary signals , it will move into G0 phase. The cell will be in an inactive state , meaning they will stop preparing to divide.
+                </p>
+                <br>
+                <br>
+                <p class="information">Some growth factor signals include ...</p>
+                <br>
+                <div class="regulation-list-box">
+                    <div class="regulation-list-item">
+                        <ul class="regulation-list">
+                            <li>Is the DNA in the cell damaged?
+                                <ul>
+                                    <li class="regulation-choice">If YES, then repair the cell.</li>
+                                    <li class="regulation-choice">If NO, then continue Interphase.</li>
+                                </ul>
+                                <br>
+                            </li>
+                    </div>
+                    <div class="regulation-list-item">
+                        <ul class="regulation-list">
+                            <li> Has the cell grown sufficiently?
+                                <ul>
+                                    <li class="regulation-choice">If YES, then stop growing.</li>
+                                    <li class="regulation-choice">If NO, then continue growing.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <img class="img" id="g0-img" src="images/g0.png">
+                <figcaption>📷 This image shows how cells will move to the G0 phase and stay there until a fix is ready.</figcaption>
+            </div>
+            <div class="regulation-item">
+                <h1 class="header-title">Cancer Cells</h1>
+                <p class="information"><strong>Q: </strong>What happens if the cell stops responding to any signals given, even signals that control cellular growth and death?</p>
+                <br>
+                <p class="information"><strong>A: </strong>The cell will continue to grow and become a <strong>Cancer Cell</strong>. These cells will grow and divide quickly, break through tissue boundaries and spread to different areas in the body, and can not be destroyed by the process of <strong>programmed cell death</strong>, which is a self destruction of a cell.</p>
+                <br>
+                <br>
+                <p class="information"><strong>Q: </strong>Why might a cell stop responding to signals it is given?</p>
+                <p class="information"><strong>A: </strong>Normal cells during Interphase have hundreds of genes controlling the process of cell division. The average cell requires a balance of genes that promote cell growth and genes that suppress cell growth. Unfortunately, mutations are able to occur in these genes. For cancer cells specifically, genes that control cell growth is mutated, making it unable to create strong signals to stop the cell from growing.</p>
+                <br>
+                <img class="img regulation-img-2" src="images/cancer.png">
+                <figcaption>📷 The image to the left shows normal cells with regulated cell growth. The image to the right shows cells with unregulated cell growth, forming cancer cells.</figcaption>
+            </div>
+        </div>
+    </div>
+    <div id="meiosis-section">
+        <h1 class="section-title">🌱 Mitosis vs Meiosis 🌱</h1>
+        <div class="meiosis-item-box">
+            <div class="meiosis-item">
+                <h1 class="header-title">Whats the difference?</h1>
+                <p class="information">Mitosis and Meiosis go through the same stages of the cell cycle (Interphase, Prophase, Metaphase, anaphase, Telephase) but are they are very different from each other. The difference is that meiosis creates four daughter cells instead of two in mitosis. 
+                <br>
+                <br>
+                Four daughter cells are able to be created because meiosis happens two times known as meiosis I and meiosis II. Each daughter cell also contains unique combinations of genetic material, which will combine to make genetic variations of gametes.
+                </p>
+            </div>
+            <div class="meiosis-item">
+                <h1 class="header-title">QA</h1>
+                <p class="information"><strong>Q: </strong>Why do the daughter cells only have half the number of chromosomes as the parenet cell?</p>
+                <p class="information"><strong>A: </strong>This is because meiosis creates cells that will become <strong>gametes</strong> (also known as reproductive cells) to make zygotes, which will ultimately become a baby!</p>
+                <br>
+                <br>
+                <p class="information"><strong>Q: </strong>How does Meiosis I differ from Meiosis II?</p>
+                <p class="information"><strong>A: </strong>Meiosis II begins with either interkinesis or interphase II. Meiosis II will not have S phase in Interphase because DNA is already replicated in Meiosis I. Each stage of the cell cycle in Meiosis II will differ slighty from Meiosis I.</p>
+            </div>
+        </div>
+    </div>
+    <div class="sources">
+        <h1 class="header-title">This website was made by Dorwin Liang for AP Biology</h1>
+        <h1 class="section-title">📚 Sources 📚</h1>
+        <div class="source-list">
+            <ul>
+                <li><a href="https://teaching.ncl.ac.uk/bms/wiki/index.php/G1_Phase">https://teaching.ncl.ac.uk/bms/wiki/index.php/G1_Phase</a></li>
+                <li><a href="http://cyberbridge.mcb.harvard.edu/mitosis_4.html">http://cyberbridge.mcb.harvard.edu/mitosis_4.html</a></li>
+                <li><a href="https://courses.lumenlearning.com/suny-biology1/chapter/control-of-the-cell-cycle/">https://courses.lumenlearning.com/suny-biology1/chapter/control-of-the-cell-cycle/</a></li>
+                <li><a href="https://sciencing.com/5-stages-mitosis-13121.html">https://sciencing.com/5-stages-mitosis-13121.html</a></li>
+                <li><a href="https://en.wikibooks.org/wiki/An_Introduction_to_Molecular_Biology/Cell_Cycle">https://en.wikibooks.org/wiki/An_Introduction_to_Molecular_Biology/Cell_Cycle</a></li>
+                <li><a href="https://education.seattlepi.com/happens-sphase-interphase-5508.html">https://education.seattlepi.com/happens-sphase-interphase-5508.html</a></li>
+                <li><a href="http://loretocollegebiology.weebly.com/interphase--mitosis.html">http://loretocollegebiology.weebly.com/interphase--mitosis.html</a></li>
+                <li><a href="https://www.nature.com/scitable/definition/spindle-fibers-304">https://www.nature.com/scitable/definition/spindle-fibers-304</a></li>
+                <li><a href="https://www.nature.com/scitable/definition/anaphase-179">https://www.nature.com/scitable/definition/anaphase-179</a></li>
+                <li><a href="https://www2.le.ac.uk/projects/vgec/highereducation/topics/cellcycle-mitosis-meiosis">https://www2.le.ac.uk/projects/vgec/highereducation/topics/cellcycle-mitosis-meiosis</a></li>
+                <li><a href="https://www.thoughtco.com/stages-of-mitosis-373534">https://www.thoughtco.com/stages-of-mitosis-373534</a></li>
+                <li><a href="https://www.nature.com/scitable/definition/telophase-128">https://www.nature.com/scitable/definition/telophase-128</a></li>
+                <li><a href="https://www.nature.com/scitable/topicpage/cell-division-and-cancer-14046590">https://www.nature.com/scitable/topicpage/cell-division-and-cancer-14046590</a></li>
+                <li><a href="https://www.nature.com/scitable/topicpage/replication-and-distribution-of-dna-during-meiosis-6524853">https://www.nature.com/scitable/topicpage/replication-and-distribution-of-dna-during-meiosis-6524853</a></li>
+                <li><a href="https://www.mytutor.co.uk/answers/17268/A-Level/Biology/What-is-the-differences-between-mitosis-and-meiosis/">https://www.mytutor.co.uk/answers/17268/A-Level/Biology/What-is-the-differences-between-mitosis-and-meiosis/</a></li>
+                <li><a href="https://study.com/academy/lesson/anaphase-definition-lesson-quiz.html">https://study.com/academy/lesson/anaphase-definition-lesson-quiz.html</a></li>
+                <li><a href="https://www.sparknotes.com/biology/cellreproduction/mitosis/section3/">https://www.sparknotes.com/biology/cellreproduction/mitosis/section3/</a></li>
+                <li><a href="https://www.albert.io/blog/difference-between-meiosis-i-and-meiosis-ii/">https://www.albert.io/blog/difference-between-meiosis-i-and-meiosis-ii/</a></li>
+            </ul>
+        </div>
     </div>
 
 </body>
